@@ -1,0 +1,97 @@
+.team {
+  background-color: #f5f4fa;
+}
+
+.team__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  width: 270px;
+  margin-right: 30px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px #00000040;
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__member,
+.team__work {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team__member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: $title-text-color;
+}
+
+.team__work {
+  color: $primary-text-color;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social__item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: #ffffff;
+  }
+}
