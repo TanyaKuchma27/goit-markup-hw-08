@@ -9,6 +9,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+    // document.body.classList.tooggle('modal-open');
     refs.modal.classList.toggle('is-hidden');
   }
 })();
